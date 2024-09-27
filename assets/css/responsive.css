@@ -1,0 +1,18 @@
+@media (max-width: 576px) {
+  /* navbar css start */
+  .header_top_wrapper .header_wrapper_block .language_wrapper .dropdown {
+    display: block;
+  }
+  .header_top_wrapper
+    .header_wrapper_block
+    .language_wrapper
+    .language_links_wrapper
+    .language_items {
+    display: none;
+  }
+  .navbar_wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* navbar css end */
+}
