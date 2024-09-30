@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-
     <link
-      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+      href="/assets/plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/plugins/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
@@ -19,10 +22,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      href="assets/plugins/font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+
     <link href="/assets/css/reset.css" rel="stylesheet" />
     <link href="/assets/css/main.css" rel="stylesheet" />
     <link href="/assets/css/responsive.css" rel="stylesheet" />
@@ -106,22 +106,6 @@
             </div>
 
             <div class="navbar_button">
-              <div class="dropdown_wrapper">
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Yangi ariza yuborish
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Individual</a></li>
-                    <li><a class="dropdown-item" href="#">Guruh</a></li>
-                  </ul>
-                </div>
-              </div>
               <div class="exit_btn">
                 <a href="#" class="exit">
                   Chiqish
@@ -138,6 +122,193 @@
       <!-- Nav end -->
     </header>
     <!-- Header section end -->
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="form_wrapper">
+            <form>
+              <!-- full name wrapper start -->
+              <div class="user_full_name_wrapper">
+                <div class="user_first_name_wrapper">
+                  <label for="firstName">Ismingiz *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Ismingizni kiriting"
+                  />
+                </div>
+                <div class="user_last_name_wrapper">
+                  <label for="lastName">Familiyangiz *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Familiyangizni kiriting"
+                  />
+                </div>
+              </div>
+              <!-- full name wrapper end -->
+
+              <!-- passport wrapper start -->
+              <div class="pasport_info_wrapper">
+                <div class="pasport_series_wrapper">
+                  <label for="pasport">Passport seriyasi va raqami</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pasport"
+                    placeholder="XX YYYYYY"
+                  />
+                </div>
+                <div class="pasport_series_wrapper">
+                  <label for="pasport_period">Amal qilish sanasi</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pasport_period"
+                    placeholder="XX/YY"
+                  />
+                </div>
+              </div>
+              <!-- passport wrapper end -->
+
+              <!-- passport photo wrapper start -->
+              <div class="file_wrapper">
+                <label for="pasport_image">Pasportni suratini yuklang</label>
+                <div class="pasport_image_download_wrapper">
+                  <div
+                    class="download_box"
+                    id="fileSelect"
+                    data-input-id="fileInput2"
+                  >
+                    <input
+                      type="file"
+                      id="fileInput1"
+                      accept=".pdf, .png, .jpg, .jpeg"
+                      style="display: none"
+                    />
+                    <h4 class="download_title">Faylni tanlang</h4>
+                    <p class="download_formats">
+                      Formatlar: (PDF//PNG/JPG/JPEG)
+                    </p>
+                  </div>
+                </div>
+                <p class="memory">5MB gacha bo'lgan fayllar</p>
+              </div>
+              <!-- passport photo wrapper end -->
+
+              <!-- address wrapper start -->
+              <div class="address_wrapper">
+                <label for="address">Manzil</label>
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="Manzil kiriting"
+                />
+              </div>
+              <!-- address wrapper end -->
+
+              <!-- choose wrapper end -->
+              <div class="choose_wrapper">
+                <label for="choose">Tanlov yo'nalishi</label>
+                <select
+                  class="form-select"
+                  id="choose"
+                  aria-label="Default select example"
+                >
+                  <option selected>Tanlang</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <!-- choose wrapper end -->
+
+              <!-- choose download wrapper start -->
+              <div class="file_wrapper">
+                <label for="choose_image">Tanlov ishini yuklang</label>
+                <div class="pasport_image_download_wrapper">
+                  <div
+                    class="download_box"
+                    data-input-id="fileInput2"
+                    id="fileSelect"
+                  >
+                    <input
+                      type="file"
+                      id="fileInput2"
+                      accept=".pdf, .png, .jpg, .jpeg"
+                      style="display: none"
+                    />
+                    <h4 class="download_title">Faylni tanlang</h4>
+                    <p class="download_formats">
+                      Formatlar: (PDF//PNG/JPG/JPEG)
+                    </p>
+                  </div>
+                </div>
+                <p class="memory">5MB gacha bo'lgan fayllar</p>
+              </div>
+              <!-- choose download wrapper end -->
+
+              <!-- recommendation download wrapper start -->
+              <div class="file_wrapper">
+                <label for="choose_image">Tavsiyanoma yuklang</label>
+                <div class="pasport_image_download_wrapper">
+                  <div
+                    class="download_box"
+                    data-input-id="fileInput3"
+                    id="fileSelect"
+                  >
+                    <input
+                      type="file"
+                      id="fileInput3"
+                      accept=".pdf, .png, .jpg, .jpeg"
+                      style="display: none"
+                    />
+                    <h4 class="download_title">Faylni tanlang</h4>
+                    <p class="download_formats">
+                      Formatlar: (PDF//PNG/JPG/JPEG)
+                    </p>
+                  </div>
+                </div>
+                <p class="memory">5MB gacha bo'lgan fayllar</p>
+              </div>
+              <!-- recommendation download wrapper end -->
+
+              <!-- biography download wrapper start -->
+              <div class="file_wrapper">
+                <label for="choose_image">Tarjimai hol yuklang</label>
+                <div class="pasport_image_download_wrapper">
+                  <div
+                    class="download_box"
+                    data-input-id="fileInput4"
+                    id="fileSelect"
+                  >
+                    <input
+                      type="file"
+                      id="fileInput4"
+                      accept=".pdf, .png, .jpg, .jpeg"
+                      style="display: none"
+                    />
+                    <h4 class="download_title">Faylni tanlang</h4>
+                    <p class="download_formats">
+                      Formatlar: (PDF//PNG/JPG/JPEG)
+                    </p>
+                  </div>
+                </div>
+                <p class="memory">5MB gacha bo'lgan fayllar</p>
+              </div>
+              <!-- biography download wrapper end -->
+              <div class="send_btn_wrapper">
+                <button class="btn send_btn">Yuborish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

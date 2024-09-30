@@ -33,3 +33,23 @@ dropdownItems.forEach((item) => {
 // Navbar language dropdown mobile version end
 
 // ================================================================================
+// FORM PAGE START
+const downloadBoxes = document.querySelectorAll(".download_box");
+
+downloadBoxes.forEach((box) => {
+  const inputId = box.getAttribute("data-input-id");
+  const fileInput = document.getElementById(inputId);
+
+  // При клике на div открываем соответствующий input
+  box.addEventListener("click", () => {
+    fileInput.click();
+  });
+
+  // Обработка события выбора файла
+  fileInput.addEventListener("change", (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      console.log(`Выбранный файл для ${inputId}:`, file.name);
+    }
+  });
+});

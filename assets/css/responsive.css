@@ -15,4 +15,17 @@
     gap: 10px;
   }
   /* navbar css end */
+
+  /* form page css start */
+  .user_full_name_wrapper,
+  .pasport_info_wrapper {
+    flex-direction: column;
+  }
+  .pasport_info_wrapper div:first-child {
+    width: 100%;
+  }
+  .pasport_info_wrapper div {
+    width: 100%;
+  }
+  /* form page css end */
 }

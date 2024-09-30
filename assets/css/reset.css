@@ -5,8 +5,11 @@
   --white: rgba(255, 255, 255, 1);
   --balck-white: rgba(241, 245, 249, 1);
   --white-purple: rgba(128, 97, 167, 1);
+  --border-color: rgba(203, 213, 225, 1);
+  --button-bg-color: rgba(233, 233, 233, 1);
+  --button-color: rgba(174, 174, 174, 1);
   --dark: rgba(32, 32, 32, 1);
-  --line: rgba(0, 0, 0, 0.175);
+  --line: rgba(0, 0, 0, 0.275);
 }
 
 body {
