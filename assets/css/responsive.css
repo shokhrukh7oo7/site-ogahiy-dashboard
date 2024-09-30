@@ -17,6 +17,9 @@
   /* navbar css end */
 
   /* form page css start */
+  form {
+    padding: 25px;
+  }
   .user_full_name_wrapper,
   .pasport_info_wrapper {
     flex-direction: column;
@@ -28,4 +31,18 @@
     width: 100%;
   }
   /* form page css end */
+
+  /* form 2 page css start */
+  .participant_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* form 2 page css end */
+}
+
+@media (max-width: 375px) {
+  .participant_box {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }

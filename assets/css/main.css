@@ -230,7 +230,9 @@ tbody .icons_wrapper {
 /* main end */
 
 /* form page styles start */
-
+.form_wrapper {
+  padding: 0 10px;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -248,11 +250,14 @@ label {
   font-size: clamp(11px, 1.5vw, 14px);
   font-weight: 700;
   margin-left: 10px;
+  color: var(--dark);
 }
+
 form .form-control {
   padding: 25px 15px;
 }
 .form-control::placeholder {
+  color: var(--button-color);
   font-size: clamp(11px, 1.5vw, 16px);
 }
 .user_full_name_wrapper {
@@ -303,7 +308,7 @@ form .form-control {
 }
 
 .send_btn {
-    font-size: clamp(12px, 1.5vw, 16px);
+  font-size: clamp(12px, 1.5vw, 16px);
   color: var(--button-color);
   background-color: var(--balck-white);
   width: 100%;
@@ -315,3 +320,60 @@ form .form-control {
   color: var(--white);
 }
 /* form page styles end */
+
+/* form page 2 styles start */
+.file_wrapper_2 .download_box {
+  padding: 20px 0;
+}
+.download_formats {
+  margin: 0;
+}
+.form-select {
+  font-size: clamp(12px, 1.5vw, 18px);
+  color: var(--button-color);
+}
+.participant_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: var(--balck-white);
+  padding: 15px;
+  border-radius: 10px;
+}
+.participant_box p {
+  font-size: clamp(12px, 1.5vw, 14px);
+  color: var(--dark);
+  font-weight: 400;
+  margin: 0;
+}
+.participant_box h6 {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--dark);
+  font-weight: 500;
+  margin: 0;
+}
+.participant_box a {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--purple);
+  text-decoration: underline;
+}
+.participant_box img {
+  cursor: pointer;
+}
+.participant_box img:hover {
+  transform: scale(1.2);
+}
+.add_participant .add_btn {
+  width: 100%;
+  border-color: var(--purple);
+  color: var(--purple);
+  font-size: clamp(12px, 1.5vw, 16px);
+  padding: 10px 0;
+  cursor: pointer;
+}
+.add_participant .add_btn:hover {
+    background-color: var(--purple);
+    color: var(--white);
+}
+/* form page 2 styles end */

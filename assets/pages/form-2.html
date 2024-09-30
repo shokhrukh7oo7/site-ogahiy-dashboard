@@ -127,65 +127,56 @@
       <section>
         <div class="container">
           <div class="form_wrapper">
-            <form>
-              <!-- full name wrapper start -->
-              <div class="user_full_name_wrapper">
-                <div class="user_first_name_wrapper">
-                  <label for="firstName">Ismingiz *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    placeholder="Ismingizni kiriting"
-                  />
-                </div>
-                <div class="user_last_name_wrapper">
-                  <label for="lastName">Familiyangiz *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    placeholder="Familiyangizni kiriting"
-                  />
-                </div>
+            <form action="">
+              <!-- organization name start -->
+              <div class="organization_name_wrapper">
+                <label for="organization">Tashkilot nomi</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="organization"
+                  placeholder="Tashkilotni kiriting"
+                />
               </div>
-              <!-- full name wrapper end -->
+              <!-- organization name end -->
 
-              <!-- passport wrapper start -->
-              <div class="pasport_info_wrapper">
-                <div class="pasport_series_wrapper">
-                  <label for="pasport">Passport seriyasi va raqami</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="pasport"
-                    placeholder="XX YYYYYY"
-                  />
-                </div>
-                <div class="pasport_series_wrapper">
-                  <label for="pasport_period">Amal qilish sanasi</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="pasport_period"
-                    placeholder="XX/YY"
-                  />
-                </div>
+              <!-- INN start -->
+              <div class="inn_wrapper">
+                <label for="inn">INN</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inn"
+                  placeholder="1234567"
+                />
               </div>
-              <!-- passport wrapper end -->
+              <!-- INN end -->
 
-              <!-- passport photo wrapper start -->
-              <div class="file_wrapper">
-                <label for="pasport_image">Pasportni suratini yuklang</label>
+              <!-- ADDRESS start -->
+              <div class="address_wrapper">
+                <label for="address">Manzil</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="Manzilni kiriting"
+                />
+              </div>
+              <!-- ADDRESS end -->
+
+              <!-- DOWNLOAD start -->
+              <div class="file_wrapper file_wrapper_2">
+                <label for="choose_image">Tanlov ishini yuklang</label>
                 <div class="pasport_image_download_wrapper">
                   <div
                     class="download_box"
+                    data-input-id="fileInput5"
                     id="fileSelect"
-                    data-input-id="fileInput2"
                   >
                     <input
                       type="file"
-                      id="fileInput1"
+                      id="fileInput5"
+                      name="choose_image"
                       accept=".pdf, .png, .jpg, .jpeg"
                       style="display: none"
                     />
@@ -197,48 +188,81 @@
                 </div>
                 <p class="memory">5MB gacha bo'lgan fayllar</p>
               </div>
-              <!-- passport photo wrapper end -->
+              <!-- DOWNLOAD end -->
 
-              <!-- address wrapper start -->
-              <div class="address_wrapper">
-                <label for="address">Manzil</label>
-                <input
-                  type="text"
-                  id="address"
-                  class="form-control"
-                  placeholder="Manzil kiriting"
-                />
-              </div>
-              <!-- address wrapper end -->
-
-              <!-- choose wrapper end -->
-              <div class="choose_wrapper">
-                <label for="choose">Tanlov yo'nalishi</label>
-                <select
-                  class="form-select"
-                  id="choose"
-                  aria-label="Default select example"
-                >
+              <!-- CHOOSE SELECT start -->
+              <div class="choose_select_wrapper">
+                <label for="choose_select">Tanlov yo'nalishi</label>
+                <select class="form-select" aria-label="Default select example">
                   <option selected>Tanlang</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
-              <!-- choose wrapper end -->
+              <!-- CHOOSE SELECT end -->
 
-              <!-- choose download wrapper start -->
-              <div class="file_wrapper">
-                <label for="choose_image">Tanlov ishini yuklang</label>
+              <!-- PARTICIPANT start -->
+              <div class="participant_wrapper">
+                <h5>Ishtirokchilar</h5>
+                <div class="participant_box">
+                  <div class="last_name">
+                    <p>Familiya</p>
+                    <h6>Makhkamov</h6>
+                  </div>
+                  <div class="first_name">
+                    <p>Ism</p>
+                    <h6>Bekhzodkhon</h6>
+                  </div>
+                  <div class="download_file_participant">
+                    <p>Tarjimai hol</p>
+                    <a href="path/to/file.pdf" download class="download-btn-5">
+                      konkurs.pdf
+                    </a>
+                  </div>
+                  <div class="trash_image">
+                    <img src="/assets/images/form/trash.svg" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- PARTICIPANT end -->
+
+              <!-- FULL NAME start -->
+              <div class="full_name_wrapper">
+                <div class="last_name">
+                  <label for="lastName">Familiya *</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="form-control"
+                    placeholder="Familiyangizni kiriting"
+                  />
+                </div>
+                <div class="first_name">
+                  <label for="firstName">Ismingiz *</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    placeholder="Ismingizni kiriting"
+                  />
+                </div>
+                <div class="first_name"></div>
+              </div>
+              <!-- FULL NAME end -->
+
+              <!-- DOWNLOAD start -->
+              <div class="file_wrapper file_wrapper_2">
+                <label for="choose_image">Tarjimai hol</label>
                 <div class="pasport_image_download_wrapper">
                   <div
                     class="download_box"
-                    data-input-id="fileInput2"
+                    data-input-id="fileInput6"
                     id="fileSelect"
                   >
                     <input
                       type="file"
-                      id="fileInput2"
+                      id="fileInput6"
                       accept=".pdf, .png, .jpg, .jpeg"
                       style="display: none"
                     />
@@ -250,60 +274,19 @@
                 </div>
                 <p class="memory">5MB gacha bo'lgan fayllar</p>
               </div>
-              <!-- choose download wrapper end -->
+              <!-- DOWNLOAD end -->
 
-              <!-- recommendation download wrapper start -->
-              <div class="file_wrapper">
-                <label for="choose_image">Tavsiyanoma yuklang</label>
-                <div class="pasport_image_download_wrapper">
-                  <div
-                    class="download_box"
-                    data-input-id="fileInput3"
-                    id="fileSelect"
-                  >
-                    <input
-                      type="file"
-                      id="fileInput3"
-                      accept=".pdf, .png, .jpg, .jpeg"
-                      style="display: none"
-                    />
-                    <h4 class="download_title">Faylni tanlang</h4>
-                    <p class="download_formats">
-                      Formatlar: (PDF//PNG/JPG/JPEG)
-                    </p>
-                  </div>
-                </div>
-                <p class="memory">5MB gacha bo'lgan fayllar</p>
+              <!-- ADD BUTTON start -->
+              <div class="add_participant">
+                <button class="btn add_btn">+ Ishtirokchi qo'shish</button>
               </div>
-              <!-- recommendation download wrapper end -->
+              <!-- ADD BUTTON end -->
 
-              <!-- biography download wrapper start -->
-              <div class="file_wrapper">
-                <label for="choose_image">Tarjimai hol yuklang</label>
-                <div class="pasport_image_download_wrapper">
-                  <div
-                    class="download_box"
-                    data-input-id="fileInput4"
-                    id="fileSelect"
-                  >
-                    <input
-                      type="file"
-                      id="fileInput4"
-                      accept=".pdf, .png, .jpg, .jpeg"
-                      style="display: none"
-                    />
-                    <h4 class="download_title">Faylni tanlang</h4>
-                    <p class="download_formats">
-                      Formatlar: (PDF//PNG/JPG/JPEG)
-                    </p>
-                  </div>
-                </div>
-                <p class="memory">5MB gacha bo'lgan fayllar</p>
-              </div>
-              <!-- biography download wrapper end -->
+              <!-- SEND BUTTON start -->
               <div class="send_btn_wrapper">
                 <button class="btn send_btn">Yuborish</button>
               </div>
+              <!-- SEND BUTTON end -->
             </form>
           </div>
         </div>
